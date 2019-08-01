@@ -34,7 +34,7 @@ jobs:
           name: run rails new
           command: |
             mkdir /tmp/rails_starterkit_sampleapp
-            bundle exec rails new $_ -m ./app_template.rb
+            bundle exec rails new $_ -m ./app_template.rb --skip-bundle --skip-webpack-install
 
       - store_test_results:
           path: /tmp/rails_starterkit_sampleapp

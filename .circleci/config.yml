@@ -7,7 +7,6 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.6.3-node-browsers
-      - image: circleci/postgres:10.7-postgis
 
     working_directory: ~/repo
 
